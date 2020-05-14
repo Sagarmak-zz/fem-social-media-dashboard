@@ -1,87 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+      }
 
-  Dark Mode
+      body {
+        min-height: 100vh;
+        min-width: 100%;
+        line-height: 1;
+        background: hsl(230, 17%, 14%);
+        color: hsl(234, 12%, 34%);
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+      }
 
-  
+      /* Helper Methods */
+      .container {
+        margin: 0 auto;
+        max-width: 75%;
+        padding: 2rem 1rem;
+      }
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      .flex {
+        display: flex;
+      }
+      .flex-column {
+        flex-direction: column;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .align-center {
+        align-items: center;
+      }
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      .bold {
+        font-weight: 700;
+      }
+      .dark-text {
+        color: hsl(228, 34%, 66%);
+      }
+      .fcol-white {
+        color: white;
+      }
+      .fcol-green {
+        color: hsl(163, 72%, 41%);
+      }
+      .fcol-red {
+        color: hsl(356, 69%, 56%);
+      }
+      .size-1_5 {
+        font-size: 1.5rem;
+      }
+      .size-3 {
+        font-size: 3rem;
+      }
+      .pa-0_5 {
+        padding: 0.5rem;
+      }
+      .pa-1 {
+        padding: 1rem;
+      }
+      .pa-1_5 {
+        padding: 1.5rem;
+      }
+      .pa-2 {
+        padding: 2rem;
+      }
+      .pa-3 {
+        padding: 3rem;
+      }
+      .pb-1 {
+        padding-bottom: 1rem;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .ls-3 {
+        letter-spacing: 3px;
+      }
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      a {
+        color: #395db8;
+        text-decoration: none;
+      }
+      a:focus {
+        color: inherit;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+      .container .social {
+      }
+      .container .social .social-header {
+      }
+      .container .social .social-body {
+        padding: 3rem 0;
+      }
+      .container .social .social-body .card {
+        width: 16rem;
+        height: 14rem;
+        border-radius: 5px;
+        background: hsl(228, 28%, 20%);
+      }
+      .container .social .social-body .card.facebook {
+        border-top: solid 3px hsl(195, 100%, 50%);
+      }
+      .container .social .social-body .card.twitter {
+        border-top: solid 3px hsl(203, 89%, 53%);
+      }
+      .container .social .social-body .card.insta {
+        border-top: solid 3px transparent;
+        background: linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)), linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+        background-clip: padding-box, border-box;
+        padding: .5rem;
+      }
+      .container .social .social-body .card.youtube {
+        border-top: solid 3px hsl(348, 97%, 39%);
+      }
 
+      .container .overview {
+        /*  */
+      }
 
+      @media all and (max-width: 550px) {
+        .container .social .social-header {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="social">
+        <div class="social-header flex align-center justify-between">
+          <div>
+            <div class="fcol-white bold size-1_5 pb-1">
+              Social Media Dashboard
+            </div>
+            <div class="dark-text bold">Total Followers: 23,004</div>
+          </div>
+          <div>
+            <div class="dark-text bold">Dark Mode</div>
+          </div>
+        </div>
+        <div class="social-body flex justify-between">
+          <div class="card facebook dark-text flex align-center flex-column">
+            <div class="1 pa-1_5 bold">@nathanf</div>
+            <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
+            <div class="3 uppercase ls-3">Followers</div>
+            <div class="4 fcol-green pa-2">12 Today</div>
+          </div>
+          <div class="card twitter dark-text flex align-center flex-column">
+            <div class="1 pa-1_5 bold">@nathanf</div>
+            <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
+            <div class="3 uppercase ls-3">Followers</div>
+            <div class="4 fcol-green pa-2">12 Today</div>
+          </div>
+          <div class="card insta dark-text flex align-center flex-column">
+            <div class="1 pa-1_5 bold">@nathanf</div>
+            <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
+            <div class="3 uppercase ls-3">Followers</div>
+            <div class="4 fcol-green pa-2">12 Today</div>
+          </div>
+          <div class="card youtube dark-text flex align-center flex-column">
+            <div class="1 pa-1_5 bold">@nathanf</div>
+            <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
+            <div class="3 uppercase ls-3">Followers</div>
+            <div class="4 fcol-green pa-2">12 Today</div>
+          </div>
+        </div>
+      </div>
+      <div class="overview">
+        <div class="overview-header"></div>
+        <div class="overview-body"></div>
+      </div>
+    </div>
 
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
 </html>
