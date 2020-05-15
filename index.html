@@ -45,7 +45,7 @@
       /* Helper Methods */
       .container {
         margin: 0 auto;
-        max-width: 75%;
+        max-width: 90%;
         padding: 2rem 1rem;
       }
 
@@ -140,7 +140,7 @@
         padding: 3rem 0;
       }
       .container .social .social-body .card {
-        width: 16rem;
+        width: 19rem;
         height: 14rem;
         border-radius: 5px;
         background: hsl(228, 28%, 20%);
@@ -168,7 +168,7 @@
         flex-wrap: wrap;
       }
       .container .overview .overview-body .small-card {
-        width: 16rem;
+        width: 19rem;
         height: 8rem;
         border-radius: 5px;
         background: hsl(228, 28%, 20%);
@@ -176,8 +176,24 @@
       }
 
       @media all and (max-width: 550px) {
+        .container {
+          max-width: 90%;
+        }
         .container .social .social-header {
           flex-wrap: wrap;
+        }
+        .container .social .social-title {
+          padding-bottom: 1rem;
+          border-bottom: solid 1px hsl(228, 34%, 66%);
+        }
+        .container .social .dark-mode-toggle {
+          padding-top: 1rem;
+        }
+        .container .social .social-body {
+          flex-wrap: wrap;
+        }
+        .container .social .social-body .card {
+          margin-bottom: 1rem;
         }
       }
     </style>
@@ -186,13 +202,13 @@
     <div class="container">
       <div class="social">
         <div class="social-header flex align-center justify-between">
-          <div>
-            <div class="fcol-white bold size-1_5 pb-1">
+          <div class="social-title">
+            <div class="title fcol-white bold size-1_5 pb-1">
               Social Media Dashboard
             </div>
-            <div class="dark-text bold">Total Followers: 23,004</div>
+            <div class="subtitle dark-text bold">Total Followers: 23,004</div>
           </div>
-          <div>
+          <div class="dark-mode-toggle">
             <div class="dark-text bold">Dark Mode</div>
           </div>
         </div>
