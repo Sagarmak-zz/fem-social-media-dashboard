@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
@@ -24,141 +24,165 @@
       <div class="social">
         <div class="social-header flex align-center justify-between">
           <div class="social-title">
-            <div class="title fcol-white bold size-1_5 pb-1">
+            <div class="title dark-text bold size-1_5 pb-1">
               Social Media Dashboard
             </div>
-            <div class="subtitle dark-text bold">Total Followers: 23,004</div>
+            <div class="subtitle dark-grey-text bold">Total Followers: 23,004</div>
           </div>
           <div class="dark-mode-toggle flex align-center justify-between">
             <div class="dark-text bold">Dark Mode</div>
             <label class="switch">
-              <input type="checkbox" checked>
+              <input type="checkbox" checked onclick="toggleDarkMode()" />
               <span class="slider round"></span>
             </label>
           </div>
         </div>
         <div class="social-body flex justify-between">
-          <div class="card facebook dark-text flex align-center flex-column">
+          <div
+            class="card card-dark-bg facebook flex align-center flex-column"
+          >
             <div class="1 flex justify-between align-center pa-1_5 bold">
               <img src="./images/icon-facebook.svg" alt="FB" />
-              <span class="pl-0_5">@nathanf</span>
+              <span class="pl-0_5 dark-grey-text">@nathanf</span>
             </div>
-            <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
-            <div class="3 uppercase ls-3">Followers</div>
-            <div class="4 fcol-green pa-2">12 Today</div>
+            <div class="2 pa-0_5 dark-text bold size-3">1987</div>
+            <div class="3 uppercase ls-3 dark-grey-text">Followers</div>
+            <div class="4 fcol-green bold pa-2">12 Today</div>
           </div>
-          <div class="card twitter dark-text flex align-center flex-column">
+          <div
+            class="card card-dark-bg dark-text twitter flex align-center flex-column"
+          >
             <div class="1 flex justify-between align-center pa-1_5 bold">
               <img src="./images/icon-twitter.svg" alt="" />
-              <span class="pl-0_5">@nathanf</span>
+              <span class="pl-0_5 dark-grey-text">@nathanf</span>
             </div>
-            <div class="2 pa-0_5 fcol-white bold size-3">1044</div>
-            <div class="3 uppercase ls-3">Followers</div>
-            <div class="4 fcol-green pa-2">99 Today</div>
+            <div class="2 pa-0_5 dark-text bold size-3">1044</div>
+            <div class="3 uppercase ls-3 dark-grey-text">Followers</div>
+            <div class="4 fcol-green bold pa-2">99 Today</div>
           </div>
-          <div class="card insta dark-text flex align-center flex-column">
+          <div
+            class="card dark-text insta dark-insta-bg flex align-center flex-column"
+          >
             <div class="1 flex justify-between align-center pa-1_5 bold">
               <img src="./images/icon-instagram.svg" alt="" />
-              <span class="pl-0_5">@realnathanf</span>
+              <span class="pl-0_5 dark-grey-text">@realnathanf</span>
             </div>
-            <div class="2 pa-0_5 fcol-white bold size-3">11k</div>
-            <div class="3 uppercase ls-3">Followers</div>
-            <div class="4 fcol-green pa-2">1099 Today</div>
+            <div class="2 pa-0_5 dark-text bold size-3">11k</div>
+            <div class="3 uppercase ls-3 dark-grey-text">Followers</div>
+            <div class="4 fcol-green bold pa-2">1099 Today</div>
           </div>
-          <div class="card youtube dark-text flex align-center flex-column">
+          <div
+            class="card card-dark-bg dark-text youtube flex align-center flex-column"
+          >
             <div class="1 flex justify-between align-center pa-1_5 bold">
               <img src="./images/icon-youtube.svg" alt="" />
-              <span class="pl-0_5">Nathan F.</span>
+              <span class="pl-0_5 dark-grey-text">Nathan F.</span>
             </div>
-            <div class="2 pa-0_5 fcol-white bold size-3">8239</div>
-            <div class="3 uppercase ls-3">Subscribers</div>
-            <div class="4 fcol-red pa-2">144 Today</div>
+            <div class="2 pa-0_5 dark-text bold size-3">8239</div>
+            <div class="3 uppercase ls-3 dark-grey-text">Subscribers</div>
+            <div class="4 fcol-red bold pa-2">144 Today</div>
           </div>
         </div>
       </div>
       <div class="overview">
-        <div class="overview-header fcol-white bold size-1_5 pb-1">
+        <div class="overview-header dark-text bold size-1_5 pb-1">
           Overview - Today
         </div>
         <div class="overview-body flex justify-between">
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Page Views</span>
+              <span class="bold dark-grey-text">Page Views</span>
               <img src="./images/icon-facebook.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">87</span>
-              <span class="fcol-green">3%</span>
+              <span class="dark-text size-2 bold">87</span>
+              <span class="fcol-green bold">3%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Likes</span>
+              <span class="bold dark-grey-text">Likes</span>
               <img src="./images/icon-facebook.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">52</span>
-              <span class="fcol-red">2%</span>
+              <span class="dark-text size-2 bold">52</span>
+              <span class="fcol-red bold">2%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Likes</span>
+              <span class="bold dark-grey-text">Likes</span>
               <img src="./images/icon-instagram.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">5462</span>
-              <span class="fcol-green">2257%</span>
+              <span class="dark-text size-2 bold">5462</span>
+              <span class="fcol-green bold">2257%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Profile Views</span>
+              <span class="bold dark-grey-text">Profile Views</span>
               <img src="./images/icon-instagram.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">52k</span>
-              <span class="fcol-green">1375%</span>
+              <span class="dark-text size-2 bold">52k</span>
+              <span class="fcol-green bold">1375%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Retweets</span>
+              <span class="bold dark-grey-text">Retweets</span>
               <img src="./images/icon-twitter.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">117</span>
-              <span class="fcol-green">303%</span>
+              <span class="dark-text size-2 bold">117</span>
+              <span class="fcol-green bold">303%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Likes</span>
+              <span class="bold dark-grey-text">Likes</span>
               <img src="./images/icon-twitter.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">507</span>
-              <span class="fcol-green">553%</span>
+              <span class="dark-text size-2 bold">507</span>
+              <span class="fcol-green bold">553%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Likes</span>
+              <span class="bold dark-grey-text">Likes</span>
               <img src="./images/icon-youtube.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">107</span>
-              <span class="fcol-red">19%</span>
+              <span class="dark-text size-2 bold">107</span>
+              <span class="fcol-red bold">19%</span>
             </div>
           </div>
-          <div class="small-card pa-1_5 flex flex-column justify-between">
+          <div
+            class="small-card card-dark-bg pa-1_5 flex flex-column justify-between"
+          >
             <div class="upper flex justify-between align-center">
-              <span class="bold dark-text">Total Views</span>
+              <span class="bold dark-grey-text">Total Views</span>
               <img src="./images/icon-youtube.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
-              <span class="fcol-white size-2 bold">1407</span>
-              <span class="fcol-red">12%</span>
+              <span class="dark-text size-2 bold">1407</span>
+              <span class="fcol-red bold">12%</span>
             </div>
           </div>
         </div>
@@ -171,5 +195,77 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script>
+      function toggleDarkMode() {
+        const toggleSwitch = document.querySelector("input[type=checkbox]");
+        let body = document.body;
+        body.classList.toggle("light-bg");
+
+        let cards = document.querySelectorAll(".card");
+        let small_cards = document.querySelectorAll(".small-card");
+        let darkTexts = document.querySelectorAll('.dark-text');
+        let lightTexts = document.querySelectorAll('.light-text');
+        let darkGreyTexts = document.querySelectorAll('.dark-grey-text');
+        let lightGreyTexts = document.querySelectorAll('.light-grey-text');
+
+        let darkInstaBG = document.querySelector('.dark-insta-bg');
+        let lightInstaBG = document.querySelector('.light-insta-bg');
+
+        if (toggleSwitch.checked) {
+          // dark to light - cards
+          cards.forEach((card, i) => {
+            if (!card.classList.contains('light-insta-bg')) {
+              card.classList.remove("card-light-bg");
+              card.classList.add("card-dark-bg");
+            }
+          });
+          small_cards.forEach((card, i) => {
+            card.classList.remove("card-light-bg");
+            card.classList.add("card-dark-bg");
+          });
+          // dark to light - dark-text
+          lightTexts.forEach((item, i) => {
+            item.classList.remove("light-text");
+            item.classList.add("dark-text");
+          });
+          // dark to light - light-grey-text
+          lightGreyTexts.forEach((item, i) => {
+            item.classList.remove("light-grey-text");
+            item.classList.add("dark-grey-text");
+          });
+          // dark to light insta bg
+          lightInstaBG.classList.remove('light-insta-bg');
+          lightInstaBG.classList.add('dark-insta-bg');
+        } 
+        else {
+          // light to dark - cards
+          cards.forEach((card, i) => {
+            if (!card.classList.contains('dark-insta-bg')) {
+              card.classList.remove("card-dark-bg");
+              card.classList.add("card-light-bg");
+            }
+          });
+          small_cards.forEach((card, i) => {
+            card.classList.remove("card-dark-bg");
+            card.classList.add("card-light-bg");
+          });
+          // light to dark - dark-text
+          darkTexts.forEach((item, i) => {
+            item.classList.remove("dark-text");
+            item.classList.add("light-text");
+          });
+          // light to dark - dark-grey-text
+          darkGreyTexts.forEach((item, i) => {
+            item.classList.remove("dark-grey-text");
+            item.classList.add("light-grey-text");
+          });
+          // light to dark insta bg
+          darkInstaBG.classList.remove('dark-insta-bg');
+          darkInstaBG.classList.add('light-insta-bg');
+        }
+
+        // card.classList.toggle("card-dark-bg");
+      }
+    </script>
   </body>
 </html>

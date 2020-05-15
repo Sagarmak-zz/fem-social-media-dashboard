@@ -20,6 +20,38 @@ body {
   font-size: 14px;
 }
 
+/* Background */
+.dark-bg {
+  background: hsl(230, 17%, 14%);
+}
+.light-bg {
+  background: hsl(0, 0%, 100%);
+  color: black;
+}
+.dark-text {
+  color: white;
+}
+.dark-grey-text {
+  color: hsl(228, 34%, 66%);
+}
+.light-text {
+  color: black;
+}
+.light-grey-text {
+  color: hsl(228, 12%, 44%);
+}
+.light-grey-text-alt {
+  color: hsl(230, 17%, 14%);
+}
+.dark-insta-bg {
+  background: linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.light-insta-bg {
+  background: linear-gradient(to right, hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
 /* Helper Methods */
 .container {
   margin: 0 auto;
@@ -45,12 +77,6 @@ body {
 
 .bold {
   font-weight: 700;
-}
-.dark-text {
-  color: hsl(228, 34%, 66%);
-}
-.fcol-white {
-  color: white;
 }
 .fcol-green {
   color: hsl(163, 72%, 41%);
@@ -111,10 +137,12 @@ a:focus {
 }
 
 .container .social {
+  /*  */
 }
 .container .social .social-header {
+  /*  */
 }
-.container .social .dark-mode-toggle .dark-text {
+.container .social .dark-mode-toggle .bold {
   margin-right: 1rem;
 }
 /* slider */
@@ -147,7 +175,7 @@ a:focus {
   height: 1rem;
   width: 1rem;
   left: 2px;
-  bottom: 4px;
+  bottom: 3px;
   background: hsl(230, 17%, 14%);
   transition: 0.4s;
   border-radius: 35px;
@@ -161,11 +189,16 @@ a:focus {
 .container .social .social-body {
   padding: 3rem 0;
 }
-.container .social .social-body .card {
+.card {
   width: 19rem;
   height: 14rem;
   border-radius: 5px;
+}
+.card-dark-bg {
   background: hsl(228, 28%, 20%);
+}
+.card-light-bg {
+  background: hsl(227, 47%, 96%);
 }
 .container .social .social-body .card.facebook {
   border-top: solid 3px hsl(195, 100%, 50%);
@@ -175,8 +208,6 @@ a:focus {
 }
 .container .social .social-body .card.insta {
   border-top: solid 3px transparent;
-  background: linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
-    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-clip: padding-box, border-box;
   padding: 0.5rem;
 }
@@ -194,7 +225,6 @@ a:focus {
   width: 19rem;
   height: 8rem;
   border-radius: 5px;
-  background: hsl(228, 28%, 20%);
   margin-bottom: 1rem;
 }
 
