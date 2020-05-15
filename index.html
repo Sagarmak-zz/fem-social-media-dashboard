@@ -15,188 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css">
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-        min-width: 100%;
-        line-height: 1;
-        background: hsl(230, 17%, 14%);
-        color: hsl(234, 12%, 34%);
-        font-family: "Inter", sans-serif;
-        font-size: 14px;
-      }
-
-      /* Helper Methods */
-      .container {
-        margin: 0 auto;
-        max-width: 90%;
-        padding: 2rem 1rem;
-      }
-
-      .flex {
-        display: flex;
-      }
-      .flex-column {
-        flex-direction: column;
-      }
-      .justify-center {
-        justify-content: center;
-      }
-      .justify-between {
-        justify-content: space-between;
-      }
-      .align-center {
-        align-items: center;
-      }
-
-      .bold {
-        font-weight: 700;
-      }
-      .dark-text {
-        color: hsl(228, 34%, 66%);
-      }
-      .fcol-white {
-        color: white;
-      }
-      .fcol-green {
-        color: hsl(163, 72%, 41%);
-      }
-      .fcol-red {
-        color: hsl(356, 69%, 56%);
-      }
-      .size-1_5 {
-        font-size: 1.5rem;
-      }
-      .size-2 {
-        font-size: 2rem;
-      }
-      .size-3 {
-        font-size: 3rem;
-      }
-      .pa-0_5 {
-        padding: 0.5rem;
-      }
-      .pa-1 {
-        padding: 1rem;
-      }
-      .pa-1_5 {
-        padding: 1.5rem;
-      }
-      .pa-2 {
-        padding: 2rem;
-      }
-      .pa-3 {
-        padding: 3rem;
-      }
-      .pb-1 {
-        padding-bottom: 1rem;
-      }
-      .pl-0_5 {
-        padding-left: 0.5rem;
-      }
-      .uppercase {
-        text-transform: uppercase;
-      }
-      .ls-3 {
-        letter-spacing: 3px;
-      }
-
-      a {
-        color: #395db8;
-        text-decoration: none;
-      }
-      a:focus {
-        color: inherit;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      .container .social {
-      }
-      .container .social .social-header {
-      }
-      .container .social .social-body {
-        padding: 3rem 0;
-      }
-      .container .social .social-body .card {
-        width: 19rem;
-        height: 14rem;
-        border-radius: 5px;
-        background: hsl(228, 28%, 20%);
-      }
-      .container .social .social-body .card.facebook {
-        border-top: solid 3px hsl(195, 100%, 50%);
-      }
-      .container .social .social-body .card.twitter {
-        border-top: solid 3px hsl(203, 89%, 53%);
-      }
-      .container .social .social-body .card.insta {
-        border-top: solid 3px transparent;
-        background: linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)), linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
-        background-clip: padding-box, border-box;
-        padding: .5rem;
-      }
-      .container .social .social-body .card.youtube {
-        border-top: solid 3px hsl(348, 97%, 39%);
-      }
-
-      .container .overview {
-        /*  */
-      }
-      .container .overview .overview-body {
-        flex-wrap: wrap;
-      }
-      .container .overview .overview-body .small-card {
-        width: 19rem;
-        height: 8rem;
-        border-radius: 5px;
-        background: hsl(228, 28%, 20%);
-        margin-bottom: 1rem;
-      }
-
-      @media all and (max-width: 550px) {
-        .container {
-          max-width: 90%;
-        }
-        .container .social .social-header {
-          flex-wrap: wrap;
-        }
-        .container .social .social-title {
-          padding-bottom: 1rem;
-          border-bottom: solid 1px hsl(228, 34%, 66%);
-        }
-        .container .social .dark-mode-toggle {
-          padding-top: 1rem;
-        }
-        .container .social .social-body {
-          flex-wrap: wrap;
-        }
-        .container .social .social-body .card {
-          margin-bottom: 1rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -215,7 +36,7 @@
         <div class="social-body flex justify-between">
           <div class="card facebook dark-text flex align-center flex-column">
             <div class="1 flex justify-between align-center pa-1_5 bold">
-              <img src="./images/icon-facebook.svg" alt="FB">
+              <img src="./images/icon-facebook.svg" alt="FB" />
               <span class="pl-0_5">@nathanf</span>
             </div>
             <div class="2 pa-0_5 fcol-white bold size-3">1987</div>
@@ -224,7 +45,7 @@
           </div>
           <div class="card twitter dark-text flex align-center flex-column">
             <div class="1 flex justify-between align-center pa-1_5 bold">
-              <img src="./images/icon-twitter.svg" alt="">
+              <img src="./images/icon-twitter.svg" alt="" />
               <span class="pl-0_5">@nathanf</span>
             </div>
             <div class="2 pa-0_5 fcol-white bold size-3">1044</div>
@@ -233,7 +54,7 @@
           </div>
           <div class="card insta dark-text flex align-center flex-column">
             <div class="1 flex justify-between align-center pa-1_5 bold">
-              <img src="./images/icon-instagram.svg" alt="">
+              <img src="./images/icon-instagram.svg" alt="" />
               <span class="pl-0_5">@realnathanf</span>
             </div>
             <div class="2 pa-0_5 fcol-white bold size-3">11k</div>
@@ -242,7 +63,7 @@
           </div>
           <div class="card youtube dark-text flex align-center flex-column">
             <div class="1 flex justify-between align-center pa-1_5 bold">
-              <img src="./images/icon-youtube.svg" alt="">
+              <img src="./images/icon-youtube.svg" alt="" />
               <span class="pl-0_5">Nathan F.</span>
             </div>
             <div class="2 pa-0_5 fcol-white bold size-3">8239</div>
@@ -252,12 +73,14 @@
         </div>
       </div>
       <div class="overview">
-        <div class="overview-header fcol-white bold size-1_5 pb-1">Overview - Today</div>
+        <div class="overview-header fcol-white bold size-1_5 pb-1">
+          Overview - Today
+        </div>
         <div class="overview-body flex justify-between">
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-facebook.svg" alt="">
+              <img src="./images/icon-facebook.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -267,7 +90,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-facebook.svg" alt="">
+              <img src="./images/icon-facebook.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -277,7 +100,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-instagram.svg" alt="">
+              <img src="./images/icon-instagram.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -287,7 +110,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-instagram.svg" alt="">
+              <img src="./images/icon-instagram.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -297,7 +120,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-twitter.svg" alt="">
+              <img src="./images/icon-twitter.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -307,7 +130,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-twitter.svg" alt="">
+              <img src="./images/icon-twitter.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -317,7 +140,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-youtube.svg" alt="">
+              <img src="./images/icon-youtube.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
@@ -327,7 +150,7 @@
           <div class="small-card pa-1_5 flex flex-column justify-between">
             <div class="upper flex justify-between align-center">
               <span class="bold dark-text">Page Views</span>
-              <img src="./images/icon-youtube.svg" alt="">
+              <img src="./images/icon-youtube.svg" alt="" />
             </div>
             <div class="lower flex justify-between align-center">
               <span class="fcol-white size-2 bold">87</span>
